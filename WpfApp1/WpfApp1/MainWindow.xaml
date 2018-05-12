@@ -3,10 +3,73 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxy="http://oxyplot.org/wpf"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Canvas Grid.Row="0">
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Top="50" Canvas.Right="50" X1="300"></Line>
+                <Ellipse Stroke="Black" Fill="White" Height="5" Width="5" Canvas.Left="41" Canvas.Top="50"></Ellipse>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="43" Canvas.Top="55" X1="10" Y1="10"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="43" Canvas.Top="55" X1="-10" Y1="10"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="33" Canvas.Top="65" X1="20"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="33" Canvas.Top="65" X1="-5" Y1="5"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="38" Canvas.Top="65" X1="-5" Y1="5"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="43" Canvas.Top="65" X1="-5" Y1="5"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="48" Canvas.Top="65" X1="-5" Y1="5"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="53" Canvas.Top="65" X1="-5" Y1="5"></Line>
+                <Ellipse Stroke="Black" Fill="White" StrokeThickness="1" Width="5" Height="5" Canvas.Top="50" Canvas.Left="225"></Ellipse>
+                <Line Stroke="Black" StrokeThickness="1" Canvas.Left="228" Canvas.Top="55" Y1="10"></Line>
+                <Ellipse Stroke="Black" Fill="White" StrokeThickness="1" Width="5" Height="5" Canvas.Top="60" Canvas.Left="225"></Ellipse>
+                <Line Stroke="Black" StrokeThickness="1" X1="15" Canvas.Left="220" Canvas.Top="65"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="-5" Y1="5" Canvas.Left="220" Canvas.Top="65"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="-5" Y1="5" Canvas.Left="225" Canvas.Top="65"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="-5" Y1="5" Canvas.Left="230" Canvas.Top="65"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="-5" Y1="5" Canvas.Left="235" Canvas.Top="65"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="60" Canvas.Left="42" Canvas.Top="23"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="10" Canvas.Left="33" Canvas.Top="23"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="10" Canvas.Left="41" Canvas.Top="83"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="60" Canvas.Left="172" Canvas.Top="23"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="10" Canvas.Left="163" Canvas.Top="23"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="10" Canvas.Left="173" Canvas.Top="83"></Line>
+                <Line Stroke="Black" StrokeThickness="1" X1="170" Canvas.Left="173" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="343" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="333" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="323" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="313" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="303" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="293" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="283" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="273" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="263" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="253" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="243" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="233" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="223" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="213" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="203" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="193" Canvas.Top="33"></Line>
+                <Line Stroke="Black" StrokeThickness="1" Y1="17" Canvas.Left="183" Canvas.Top="33"></Line>
+                <TextBlock Canvas.Left="45" Canvas.Top="15" FontFamily="Times New Roman">2M</TextBlock>
+                <TextBlock Canvas.Left="160" FontFamily="Times New Roman">M</TextBlock>
+                <TextBlock Canvas.Left="260" Canvas.Top="15" FontFamily="Times New Roman">q</TextBlock>
+                <TextBlock Canvas.Left="160" Canvas.Top="50" FontFamily="Times New Roman">C</TextBlock>
+                <TextBlock Canvas.Top="65" Canvas.Left="95" FontFamily="Times New Roman">2a</TextBlock>
+                <TextBlock Canvas.Top="65" Canvas.Left="195" FontFamily="Times New Roman">a</TextBlock>
+                <TextBlock Canvas.Top="65" Canvas.Left="295" FontFamily="Times New Roman">2a</TextBlock>
+            </Canvas>
+        </Grid>
     </Grid>
 </Window>
