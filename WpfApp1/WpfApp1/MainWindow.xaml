@@ -6,7 +6,7 @@
         xmlns:oxy="http://oxyplot.org/wpf"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Оптимизация балки" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         
         <Grid.ColumnDefinitions>
@@ -20,16 +20,25 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
             <Button Grid.Column="0" Grid.Row="0" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="MomentButton" Click="MomentButton_Click">Эпюра моментов</Button>
             <Button Grid.Column="0" Grid.Row="1" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="ForceButton" Click="ForceButton_Click">Эпюра перерезывающих сил</Button>
-            <Button Grid.Column="0" Grid.Row="2" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold">Оптимальная конструкция</Button>
-            <Button Grid.Column="0" Grid.Row="3" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold">Настоящая конструкция</Button>
+            <Button Grid.Column="0" Grid.Row="2" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="OptimalButton" Click="OptimalButton_Click">Оптимальная конструкция</Button>
+            <Button Grid.Column="0" Grid.Row="3" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="OptimalTwoPercentButton" Click="OptimalTwoPercentButton_Click">20 процентов</Button>
+            <Button Grid.Column="0" Grid.Row="4" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="OptimalFourPercentButton" Click="OptimalFourPercentButton_Click">40 процентов</Button>
+            <Button Grid.Column="0" Grid.Row="5" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="OptimalSixPercentButton" Click="OptimalSixPercentButton_Click">60 процентов</Button>
+            <Button Grid.Column="0" Grid.Row="6" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="OptimalEightPercentButton" Click="OptimalEightPercentButton_Click">80 процентов</Button>
+            <Button Grid.Column="0" Grid.Row="7" Background="White" FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Name="OptimalTenPercentButton" Click="OptimalTenPercentButton_Click">100 процентов</Button>
         </Grid>
 
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
@@ -91,6 +100,9 @@
                     <oxy:LineSeries ItemsSource="{Binding PointsDiagram}"></oxy:LineSeries>
                 </oxy:Plot.Series>
             </oxy:Plot>
+
+            <DataGrid Grid.Row="2" AutoGenerateColumns="True" ColumnWidth="190" x:Name="ScopesDataGrid">
+            </DataGrid>
         </Grid>
     </Grid>
 </Window>
